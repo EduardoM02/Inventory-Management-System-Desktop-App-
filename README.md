@@ -18,25 +18,45 @@ Desktop application for managing product inventory, categories, and stock moveme
 The project follows a clean layered architecture to ensure maintainability and scalability
 
 inventory_management_app/
-│
-├── database/
-│   ├── models/        # SQLAlchemy ORM models
-│   ├── repositories/  # Database access layer
-|   ├── schemas/       # Data validation schemas
-│   └── database.py    # DB session configuration
-│        
-├── services/          # Business logic and validations
-│
-├── ui/
-│   ├── category/      # UI Controller ↔ Service communication
-│   ├── product/       # UI Controller ↔ Service communication
-│   ├── movement/      # UI Controller ↔ Service communication
-|   ├── sidebar.py
-│   └── main_window.py
+
+|
+
+|── database/
+
+| 	  |── models/        # SQLAlchemy ORM models
+
+| 	  |── repositories/  # Database access layer
+
+|    |── schemas/       # Data validation schemas
+
+| 	  |── database.py    # DB session configuration
+
+|        
+
+|── services/          # Business logic and validations
+
+|
+
+|── ui/
+
+|   |── category/      # UI Controller ↔ Service communication
+
+|   |── product/       # UI Controller ↔ Service communication
+
+|   |── movement/      # UI Controller ↔ Service communication
+
+|   |── sidebar.py
+
+|   |── main_window.py
+
 |   
-│
-├── main.py
-└── README.md
+
+|
+
+|── main.py
+
+|── README.md
+
 
 Responsibilities by layer:
 - **Repositories**: database queries and persistence
