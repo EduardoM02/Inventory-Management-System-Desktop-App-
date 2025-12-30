@@ -90,13 +90,11 @@ Responsibilities by layer:
 
 ---
 
-## Database
-- Uses PostgreSQL with SQLAlchemy ORM
-- Enforces:
-    - Foreign keys
-    - NOT NULL constraints
-    - Enum types for movement type
-- Safe handling of integrity errors (e.g. deleting products with existing movements)
+## Database Setup
+1. Create a PostgreSQL database
+2. Run the schema script:
+   psql -d inventory_db -f database/schema.sql
+3. Configure `.env` variables
 
 ---
 
