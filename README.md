@@ -1,9 +1,11 @@
-# Inventory-Management-System-Desktop-App-
+# Inventory Management System Desktop App
+<img src="https://img.shields.io/badge/STATUS-In_Development-g"> <img src="https://img.shields.io/badge/Release_date-December-blue">
+
 Desktop application for managing product inventory, categories, and stock movements. Built with Python, PySide6, SQLAlchemy, and PostgreSQL, following a modular and layered architecture.
 
 ---
 
-## Features
+## :star: Features
 - Category management (CRUD)
 - Product management with category assignment
 - Stock movements (in / out) with history
@@ -14,49 +16,8 @@ Desktop application for managing product inventory, categories, and stock moveme
 
 ---
 
-## Architecture
+## :hammer: Architecture
 The project follows a clean layered architecture to ensure maintainability and scalability
-
-inventory_management_app/
-
-|
-
-|── database/
-
-| 	  |── models/        # SQLAlchemy ORM models
-
-| 	  |── repositories/  # Database access layer
-
-|    |── schemas/       # Data validation schemas
-
-| 	  |── database.py    # DB session configuration
-
-|        
-
-|── services/          # Business logic and validations
-
-|
-
-|── ui/
-
-|   |── category/      # UI Controller ↔ Service communication
-
-|   |── product/       # UI Controller ↔ Service communication
-
-|   |── movement/      # UI Controller ↔ Service communication
-
-|   |── sidebar.py
-
-|   |── main_window.py
-
-|   
-
-|
-
-|── main.py
-
-|── README.md
-
 
 Responsibilities by layer:
 - **Repositories**: database queries and persistence
@@ -66,7 +27,7 @@ Responsibilities by layer:
 
 ---
 
-## Tech Stack
+## ✔️: Tech Stack
 - Python 3.10+
 - PySide6 (Qt for Python)
 - SQLAlchemy (ORM)
@@ -76,21 +37,21 @@ Responsibilities by layer:
 
 ---
 
-## Setup & Installation
-1. Clone repository:
-   git clone https://github.com/EduardoM02/Inventory-Management-System-Desktop-App-.git
-   cd Inventory-Management-System-Desktop-App-
-2. Create virtual environment:
-   python -m venv .venv
-   source .venv/bin/activate   # Linux/Mac
-   .venv\Scripts\activate      # Windows
-3. Install dependencies:
-    pip install -r requirements.txt
+## 📁 Setup & Installation
+1. Clone repository:<pre>
+      git clone https://github.com/EduardoM02/Inventory-Management-System-Desktop-App-.git
+      cd Inventory-Management-System-Desktop-App-
+2. Create virtual environment:<pre>
+      python -m venv .venv
+      source .venv/bin/activate   # Linux/Mac
+      .venv\Scripts\activate      # Windows
+3. Install dependencies:<pre>
+      pip install -r requirements.txt
 4. Configure environment variables (using .env-example)
 
 ---
 
-## Database Setup
+## 💾 Database Setup
 1. Create a PostgreSQL database
 2. Run the schema script:
    psql -d inventory_db -f database/schema.sql
@@ -98,12 +59,12 @@ Responsibilities by layer:
 
 ---
 
-## Run the application
+## ▶️ Run the application
 python main.py
 
 ---
 
-## What I Learned
+## 📘 What I Learned
 - Designing a desktop application with clean architecture
 - Managing complex CRUD operations with relational data
 - Handling database integrity and business rules
